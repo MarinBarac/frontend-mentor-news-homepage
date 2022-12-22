@@ -1,0 +1,26 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.navLink:hover {
+    cursor: pointer;
+    color: orange;
+}

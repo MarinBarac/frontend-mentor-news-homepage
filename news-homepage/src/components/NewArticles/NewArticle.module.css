@@ -1,0 +1,26 @@
+.container {
+    border-bottom: 1px solid white;
+    text-align: start;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container:last-child {
+    border-bottom: none;
+}
+
+.title {
+    font-size: 23px;
+}
+
+.title:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+.description {
+    font-size: 16px;
+    color: lightgrey;
+}

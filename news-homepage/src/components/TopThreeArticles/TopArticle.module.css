@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.imageContainer {
+    height: 200px;
+}
+
+.image {
+    height: 100%;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: 700;
+    color: lightgray;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.title:hover {
+    cursor: pointer;
+    color: rgb(255, 71, 71);
+}
+
+.description {
+    font-size: 18px;
+    color: gray;
+    text-align: start;
+}
