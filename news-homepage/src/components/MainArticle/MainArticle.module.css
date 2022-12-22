@@ -53,3 +53,23 @@
     cursor: pointer;
     background-color: black;
 }
+
+@media screen and (max-width: 768px) {
+    .imageContainer {
+        max-width: 100%;
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .articleText {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 40px;
+        width: 100%;
+    }
+}

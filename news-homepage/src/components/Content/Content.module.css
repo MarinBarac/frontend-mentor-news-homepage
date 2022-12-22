@@ -5,3 +5,10 @@
     gap: 50px;
     max-width: 1300px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: calc(100% - 50px);
+        grid-template-columns: 1fr;
+    }
+}

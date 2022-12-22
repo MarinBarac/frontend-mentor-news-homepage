@@ -5,3 +5,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-column-end: 2;
+        margin-bottom: 100px;
+    }
+}
+
