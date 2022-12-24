@@ -1,17 +1,14 @@
 import image from "../../assets/images/image-web-3-desktop.jpg";
 
-import styles from "./MainArticle.module.css";
+import styles from "./MainArticle.module.scss";
 
 const MainArticle = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <img src={image} className={styles.image} alt="Main" />
       </div>
       <div className={styles.articleText}>
-        <div className={styles.titleContainer}>
-          <h1 className={styles.title}>The Bright Future of Web 3.0?</h1>
-        </div>
+        <h1 className={styles.title}>The Bright Future of Web 3.0?</h1>
         <div className={styles.rightText}>
           <p className={styles.description}>
             We dive into the next evolution of the web that claims to put the

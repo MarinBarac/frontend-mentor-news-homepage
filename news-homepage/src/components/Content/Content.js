@@ -2,7 +2,7 @@ import MainArticle from '../MainArticle/MainArticle';
 import NewArticles from '../NewArticles/NewArticles';
 import TopThreeArticles from '../TopThreeArticles/TopThreeArticles';
 
-import styles from './Content.module.css';
+import styles from './Content.module.scss';
 
 const Content = () => {
     return <div className={styles.container}>

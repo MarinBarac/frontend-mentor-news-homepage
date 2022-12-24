@@ -1,4 +1,4 @@
-import styles from './NewArticle.module.css';
+import styles from './NewArticle.module.scss';
 
 const NewArticle = ({ article }) => {
   return (

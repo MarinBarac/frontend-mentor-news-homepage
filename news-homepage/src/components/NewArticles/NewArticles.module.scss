@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-color: $very-dark-blue;
+    padding: 24px 20px;
+
+    .title {
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $orange;
+        text-align: start;
+    }
+
+    .articles {
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+    }
+}

@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 29px;
+    border-bottom: 1px solid $dark-blue;
+
+    .title {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 800;
+        color: $white;
+        text-align: start;
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: 26px;
+        font-weight: 400;
+        color: $dark-blue;
+        text-align: start;
+    }
+}
+
+.container:last-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+}

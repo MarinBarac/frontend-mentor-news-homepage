@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    max-width: 1300px;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -62,7 +62,8 @@
 
 .hamburger.active .hamburgerBar {
     transition: 
-        top 300ms ease-in, 
+        top 300ms ease-in,
+        bottom 300ms ease-in,
         rotate 300ms ease-in 300ms,
         opacity 0ms 300ms;
 }
@@ -85,12 +86,8 @@
     cursor: pointer;
 }
 
-.hamburger.active :is(.barOne, .barThree) {
-    top: 50%;
-    bottom: 50%;
-}
-
 .hamburger.active .barOne {
+    top: calc(50% - 5px);
     rotate: 45deg;
     transform-origin: center;
 }
@@ -100,13 +97,16 @@
 }
 
 .hamburger.active .barThree {
+    bottom: 50%;
     rotate: -45deg;
     transform-origin: center;
 }
 
 @media screen and (max-width: 768px) {
     .header {
-        width: calc(100% - 50px);
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .backdrop {

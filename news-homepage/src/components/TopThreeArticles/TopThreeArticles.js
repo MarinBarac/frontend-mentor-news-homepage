@@ -2,7 +2,7 @@ import revivingRetroPCs from '../../assets/images/image-retro-pcs.jpg';
 import topLaptops from '../../assets/images/image-top-laptops.jpg';
 import growthOfGaming from '../../assets/images/image-gaming-growth.jpg';
 
-import styles from './TopThreeArticles.module.css';
+import styles from './TopThreeArticles.module.scss';
 import TopArticle from './TopArticle';
 
 const ARTICLES = [

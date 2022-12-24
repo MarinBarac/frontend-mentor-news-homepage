@@ -1,4 +1,4 @@
-import styles from './TopArticle.module.css';
+import styles from './TopArticle.module.scss';
 
 const TopArticle = ({ article }) => {
     return <div className={styles.container}>

@@ -1,0 +1,47 @@
+@import "../../variables.scss";
+
+.container {
+    display: flex;
+    gap: 24px;
+
+    .imageContainer {
+        width: 100px;
+        height: 129px;
+        object-fit: cover;
+
+        .image {
+            width: 100px;
+        }
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+
+        .number {
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 700;
+            color: $blue;
+            text-align: start;
+            margin-bottom: 12px;
+        }
+
+        .title {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 800;
+            color: $very-dark-blue;
+            text-align: start;
+            margin-bottom: 9px;
+        }
+
+        .description {
+            font-size: 15px;
+            line-height: 26px;
+            font-weight: 400;
+            color: $dark-blue;
+            text-align: start;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import logo from '../../assets/images/logo.svg';
 
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 
 const NAV_LINKS = ['Home', 'New', 'Popular', 'Trending', 'Categories'];
 
