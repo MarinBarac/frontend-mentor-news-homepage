@@ -41,10 +41,10 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS custom properties
 - Flexbox
-- CSS Grid
-- CSS Modules
+- Grid
+- SCSS Modules
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 

@@ -17,3 +17,6 @@
 
 /mentor-assets
 /mentor-design
+
+package-lock.json
+package.json

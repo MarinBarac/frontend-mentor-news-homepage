@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         <nav className={`${styles.navbar} ${showMenu ? styles.active : ''}`}>
             <ul className={`${styles.navLinks}`}>
-                {NAV_LINKS.map(link => (<li className={styles.navLink}>{link}</li>))}
+                {NAV_LINKS.map(link => (<li className={styles.navLink} key={link}>{link}</li>))}
             </ul>
         </nav>
         <div className={`${styles.hamburger} ${showMenu ? styles.active : ''}`} onClick={toggleMenu}>

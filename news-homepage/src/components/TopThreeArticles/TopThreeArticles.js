@@ -28,7 +28,7 @@ const ARTICLES = [
 
 const TopThreeArticles = () => {
     return <div className={styles.container}>
-        {ARTICLES.map(article => <TopArticle article={article} />)}
+        {ARTICLES.map(article => <TopArticle article={article} key={article.id}/>)}
     </div>
 }
 

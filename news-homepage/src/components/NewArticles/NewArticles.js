@@ -24,7 +24,7 @@ const NewArticles = () => {
       <h2 className={styles.title}>NEW</h2>
       <div className={styles.articles}>
         {NEW_ARTICLES.map((article) => (
-          <NewArticle article={article} />
+          <NewArticle article={article} key={article.title}/>
         ))}
       </div>
     </div>
