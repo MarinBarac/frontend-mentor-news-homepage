@@ -24,6 +24,7 @@
             font-size: 40px;
             line-height: 40px;
             font-weight: 800;
+            text-align: start;
         }
         
         .rightText {
@@ -35,6 +36,7 @@
                 font-size: 15px;
                 line-height: 26px;
                 font-weight: 400;
+                text-align: start;
                 color: $dark-blue;
             }
 
@@ -48,14 +50,36 @@
                 background-color: $red;
                 padding: 11px 35px;
                 border: none;
-                
+                transition: .2s ease-in;
+            }
+
+            .btn:hover {
+                cursor: pointer;
+                color: $white;
+                background-color: $very-dark-blue;
             }
         }
     }
 
     @media screen and (min-width: $tablet) {
+        gap: 28px;
+        
         .imageContainer {
             background-image: url("../../assets/images/image-web-3-desktop.jpg");
+        }
+
+        .articleText {
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            .title {
+                font-size: 56px;
+                line-height: 56px;
+            }
+
+            .rightText {
+                gap: 29px;
+            }
         }
     }
 }

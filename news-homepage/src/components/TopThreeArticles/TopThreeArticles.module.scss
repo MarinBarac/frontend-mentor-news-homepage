@@ -1,6 +1,14 @@
+@import "../../variables.scss";
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
     margin-bottom: 80px;
+
+    @media screen and (min-width: $tablet) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

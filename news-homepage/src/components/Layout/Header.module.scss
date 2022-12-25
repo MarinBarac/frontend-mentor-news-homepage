@@ -1,119 +1,148 @@
 @import "../../variables.scss";
 
 .header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 16px;
-    margin-bottom: 4px;
-    position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 16px;
+  margin-bottom: 4px;
+  position: relative;
 
-    .backdrop {
-        position: fixed;
-        background-color: hsla(240, 100%, 5%, .5);
-        width: 100vw;
-        height: 100%;
-        top: 0;
-        right: -100%;
-        opacity: 0;
-        transition:
-            opacity 500ms ease-in, 
-            right 500ms ease-in 500ms;
+  .backdrop {
+    position: fixed;
+    background-color: hsla(240, 100%, 5%, 0.5);
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    opacity: 0;
+    transition: opacity 500ms ease-in, right 500ms ease-in 500ms;
+  }
+
+  .backdrop.active {
+    right: 0;
+    opacity: 1;
+    transition: right 0ms ease-in, opacity 500ms ease-in;
+  }
+
+  .navbar {
+    height: 100%;
+    padding: 144px 25px;
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 500ms ease-in;
+
+    .navLinks {
+      width: 256px;
+      max-width: 100%;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+
+      .navLink {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400px;
+        text-align: start;
+        transition: .2s ease-in;
+      }
+
+      .navLink:hover {
+        color: $red;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .navbar.active {
+    right: 0;
+    transition: right 500ms ease-in;
+  }
+
+  .hamburger {
+    position: relative;
+    width: 40px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .hamburgerBar {
+      width: 100%;
+      height: 3px;
+      background-color: $very-dark-blue;
+      z-index: 5;
+      transform-origin: center;
+      transition: opacity 0ms 250ms, top 250ms ease-in 250ms,
+        bottom 250ms ease-in 250ms, rotate 250ms ease-in;
     }
 
-    .backdrop.active {
-        right: 0;
-        opacity: 1;
-        transition: 
-            right 0ms ease-in,
-            opacity 500ms ease-in;
+    .barOne {
+      position: absolute;
+      top: 5px;
+    }
+
+    .barThree {
+      position: absolute;
+      bottom: 5px;
+    }
+  }
+
+  .hamburger.active {
+    .hamburgerBar {
+      transition: top 250ms ease-in, bottom 250ms ease-in,
+        rotate 250ms ease-in 250ms;
+    }
+
+    .barOne {
+      top: calc(50% - 3px);
+      rotate: 45deg;
+    }
+
+    .barTwo {
+      opacity: 0;
+      transition: 250ms;
+    }
+
+    .barThree {
+      bottom: 50%;
+      rotate: -45deg;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1110px;
+    padding: 55px 0;
+    padding-bottom: 55px;
+    margin: 0 auto;
+    margin-top: 34px;
+
+    .backdrop {
+      display: none;
     }
 
     .navbar {
-        height: 100%;
-        padding: 144px 25px;
-        background-color: $white;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        transition: right 500ms ease-in;
-        
-        .navLinks {
-            width: 256px;
-            max-width: 100%;
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 24px;
+      display: block;
+      position: relative;
+      right: 0;
+      transition: none;
+      height: auto;
+      padding: 0;
 
-            .navLink {
-                font-size: 18px;
-                line-height: 24px;
-                font-weight: 400px;
-                text-align: start;
-            }
-        }
-    }
-
-    .navbar.active {
-        right: 0;
-        transition: right 500ms ease-in;
+      .navLinks {
+        width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 40px;
+      }
     }
 
     .hamburger {
-        position: relative;
-        width: 40px;
-        height: 28px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-         
-        .hamburgerBar {
-            width: 100%;
-            height: 3px;
-            background-color: $very-dark-blue;
-            z-index: 5;
-            transform-origin: center;
-            transition:
-                opacity 0ms 250ms, 
-                top 250ms ease-in 250ms,
-                bottom 250ms ease-in 250ms,
-                rotate 250ms ease-in;
-        }
-
-        .barOne {
-            position: absolute;
-            top: 5px;
-        }
-
-        .barThree {
-            position: absolute;
-            bottom: 5px;
-        }
+      display: none;
     }
-
-    .hamburger.active {
-        .hamburgerBar {
-            transition: 
-                top 250ms ease-in,
-                bottom 250ms ease-in,
-                rotate 250ms ease-in 250ms;
-        }
-
-        .barOne {
-            top: calc(50% - 3px);
-            rotate: 45deg;
-        }
-
-        .barTwo {
-            opacity: 0;
-            transition: 250ms;
-        }
-
-        .barThree {
-            bottom: 50%;
-            rotate: -45deg;
-        }
-    }
+  }
 }

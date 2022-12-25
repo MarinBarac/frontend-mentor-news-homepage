@@ -34,6 +34,12 @@
             color: $very-dark-blue;
             text-align: start;
             margin-bottom: 9px;
+            transition: .2s ease-in;
+        }
+
+        .title:hover {
+            color: $red;
+            cursor: pointer;
         }
 
         .description {
