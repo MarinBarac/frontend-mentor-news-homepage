@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/news-homepage-kfrRc_omro)
+- Live Site URL: [Vercel link](https://frontend-mentor-news-homepage-one.vercel.app/)
 
 ## My process
 
